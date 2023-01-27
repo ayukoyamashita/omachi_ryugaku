@@ -1,8 +1,10 @@
 <ul class="videoList">
 	<%- videos.each do |video| %>
 		<li>
-			<img src="https://placehold.jp/150x150.png">
-			<p><%= video.point1 %></p>
+			<a href="<%= video_detail_path(shop_id: video.shop_id, video_id: video.id) %>">
+				<%= image_tag video.thumb_mini_path %>
+				<p><%= truncate(video.description, length: 20) %></p>
+			</a>
 		</li>
 	<%- end %>
 </ul>
