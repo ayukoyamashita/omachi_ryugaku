@@ -4,10 +4,10 @@
 	<ul>
 		<%- Shop.all.each do |shop| %>
 			<li>
-				<%= image_tag shop.image_path %>
+				<a href="<%= shop_detail_path(shop.id) %>"><%= image_tag shop.image_path %></a>
 				<h3><%= shop.name %></h3>
 				<p><%= shop.address %></p>
-				<p><%= shop.description %></p>
+				<p><%= truncate(shop.description, length: 100) %></p>
 			</li>
 		<%- end %>
 	</ul>
