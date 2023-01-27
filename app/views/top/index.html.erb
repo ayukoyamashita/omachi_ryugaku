@@ -1,33 +1,84 @@
 <div class="header">
 	<div class="header_inner">
-		ヘッダー
+		<img src="<%= asset_path('top/top_img.png') %>" alt="しずおか おまち留学" class="el_img">
 	</div>
 </div>
+
 <div class="main">
 	<div class="main_inner">
+
 		<div class="part_desc">
-			説明
+			<img src="<%= asset_path('top/desc.png') %>" alt="しずおか おまち留学" class="el_img">
 		</div>
+
 		<div class="part_problem">
-			悩みありませんか？
+			<img src="<%= asset_path('top/problem.png') %>" alt="しずおか おまち留学" class="el_img">
 		</div>
-		<div class="part_success">
-			先輩たちの成功体験
-		</div>
-		<div class="part_flow">
-			留学の流れ
-		</div>
-		<div class="part_plan">
-			プランの説明
-		</div>
+
 		<div class="part_options">
-			<div class="part_options_movie">
-				動画一覧
-				<%= link_to 'もっとみる', videos_path %>
+			<img src="<%= asset_path('top/search_title.png') %>" alt="留学先を探す" class="el_titleImg">
+			<div class="part_options_container">
+				<a href="<%= videos_path %>">
+					<img src="<%= asset_path('top/movie_search.png') %>" alt="動画でおまち留学" class="el_img">
+				</a>
+				<a href="<%= shops_path %>">
+					<img src="<%= asset_path('top/shop_search.png') %>" alt="お店でおまち留学" class="el_img">
+				</a>
 			</div>
-			<div class="part_options_staying">
-				お店一覧
-				<%= link_to 'もっとみる', shops_path %>
+		</div>
+
+		<div class="part_success">
+			<img src="<%= asset_path('top/success_patern.png') %>" alt="おまち留学のあと成功した人たち" class="el_titleImg">
+			<div class="part_success_container">
+				<div class="success_option">
+					<img src="<%= asset_path('top/no1.png') %>" alt="しずおか おまち留学" class="el_number">
+					<div class="el_img">
+
+					</div>
+					<p class="el_name">丸山いづみさん</p>
+					<p class="el_desc">留学先</p>
+					<p class="el_shopName">店舗名</p>
+				</div>
+				<div class="success_option">
+					<img src="<%= asset_path('top/no2.png') %>" alt="しずおか おまち留学" class="el_number">
+					<div class="el_img">
+
+					</div>
+					<p class="el_name">山下彩友子さん</p>
+					<p class="el_desc">留学先</p>
+					<p class="el_shopName">店舗名</p>
+				</div>
+				<div class="success_option">
+					<img src="<%= asset_path('top/no3.png') %>" alt="しずおか おまち留学" class="el_number">
+					<div class="el_img">
+
+					</div>
+					<p class="el_name">沼上順香さん</p>
+					<p class="el_desc">留学先</p>
+					<p class="el_shopName">店舗名</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="part_flow">
+			<img src="<%= asset_path('top/flow.png') %>" alt="おまち留学後の流れ" class="el_img">
+			<p class="">ご希望の方は、WOMOスタッフがお答えします！</p>
+			<a href="https://www.esz.co.jp/contact/">WOMOへ無料相談</a>
+		</div>
+
+		<div class="part_plan">
+			<img src="<%= asset_path('top/plan.png') %>" alt="おまち留学後のプラン" class="el_img">
+		</div>
+
+		<div class="part_options">
+			<img src="<%= asset_path('top/search_title.png') %>" alt="留学先を探す" class="el_titleImg">
+			<div class="part_options_container">
+				<a href="<%= videos_path %>">
+					<img src="<%= asset_path('top/movie_search.png') %>" alt="動画でおまち留学" class="el_img">
+				</a>
+				<a href="<%= shops_path %>">
+					<img src="<%= asset_path('top/shop_search.png') %>" alt="お店でおまち留学" class="el_img">
+				</a>
 			</div>
 		</div>
 	</div>

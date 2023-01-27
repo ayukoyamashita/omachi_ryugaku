@@ -1,9 +1,11 @@
 //---------------------header---------------------
 .header{
 	&_inner{
-		background-color: #EAEAEA;
-		width: 100%;
-		height: 300px;
+		margin-bottom: 15px;
+		.el_img{
+			width: 100%;
+			aspect-ratio: 1440.01 / 945.02;
+		}
 	}
 }
 
@@ -11,34 +13,69 @@
 .main{
 	&_inner{
 		.part_desc{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			.el_img{
+				width: 100%;
+				aspect-ratio: 1323.62 / 606.26;
+			}
 		}
 		.part_problem{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			.el_img{
+				width: 100%;
+				aspect-ratio: 1440.01 / 822.25;
+			}
 		}
 		.part_success{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			background-color: #FFE2FF;
+			overflow: hidden;
+			.el_titleImg{
+				display: block;
+				width: 80%;
+				margin: 20px auto;
+				aspect-ratio: 905.91 / 174.47;
+			}
+
+			&_container{
+				display: flex;
+				justify-content: center;
+				gap: 0 10px;
+				margin: 0 10px 10px;
+			}
 		}
 		.part_flow{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			.el_img{
+				display: block;
+				margin: 40px auto;
+				width: 80%;
+				aspect-ratio: 1440.01 / 822.25;
+			}
 		}
 		.part_plan{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			.el_img{
+				width: 100%;
+				aspect-ratio: 1440.01 / 772.1;
+			}
 		}
 		.part_options{
-			background-color: #EAEAEA;
-			margin: 10px;
-			height: 100px;
+			.el_titleImg{
+				display: block;
+				margin: 20px auto;
+				max-width: 200px;
+				aspect-ratio: 458.54 / 86.09;
+			}
+
+			&_container{
+				display: flex;
+				justify-content: center;
+				gap: 0 50px;
+				margin-bottom: 20px;
+
+				.el_img{
+					max-width: 100px;
+					aspect-ratio: 413.36 / 413.37;
+				}
+			}
+
+
 		}
 	}
 }
