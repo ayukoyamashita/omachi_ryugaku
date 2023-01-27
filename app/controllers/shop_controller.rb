@@ -5,7 +5,7 @@ class ShopController < ApplicationController
 	end
 
 	def detail
-		@shop = Shop.find(1)
+		@shop = Shop.find(params[:shop_id])
 	end
 
 	def videos
