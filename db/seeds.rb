@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Shop.create!(
+	name: "CHA CA（茶花）",
+	image_path: "/shops/chaka/main.jpeg",
+	catch: "落ち着いた空間でゆったりと。ショッピングの休憩にゆっくりできるデパート内のカフェ",
+	owner_name: 'オーナーの名前',
+	owner_image_path: 'owner_sample.jpg',
+	owner_profile: 'オーナーのプロフィール',
+	description: "コンセプトは「食が健康な身体を作る」。ヘルシーな食材を取り入れた料理を提供しているカフェレストラン。静岡伊勢丹の中にあり、ショッピングの途中や街中で働く方のランチ、仕事帰りにも利用しやすい。玄米、大豆ミート、野菜といった材料をメインにした料理には、できるかぎり体にやさしい食材を使用。健康を意識した食事ができる。木のぬくもりを感じられる内装は落ち着いた雰囲気で、街中にありながらゆったりと過ごせる。",
+	description_image: "/shops/chaka/desc_image.jpeg",
+	address: "420-0031 静岡県静岡市葵区呉服町1-7 静岡伊勢丹4F",
+	learn_image1: 'dummy.png',
+	learn_image2: 'dummy.png',
+	learn_image3: 'dummy.png',
+	learn_point1: '学ぶポイント１',
+	learn_point2: '学ぶポイント２',
+	learn_point3: '学ぶポイント３',
+	learn_day1: '一日目の内容です一日目の内容です一日目の内容です一日目の内容です一日目の内容です',
+	learn_day2: '二日目の内容です',
+	learn_day3: '三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です',
+)
