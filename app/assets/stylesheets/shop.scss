@@ -93,11 +93,11 @@
 		background-color: #F9F3CE;
 
 		&_inner {
-			padding: 10px;
+			padding: 20px;
 		}
 
 		&_title{
-
+			margin-bottom: 10px;
 		}
 		&_conatiner{
 
@@ -105,12 +105,13 @@
 	}
 
 	&_desc {
-		margin: 0 10px 20px;
+		margin: 0 20px 20px;
 		.el_desc{
 			}
 		.el_img{
 			width: 100px;
 			float: right;
+			margin-left: 10px;
 		}
 	}
 
@@ -119,37 +120,71 @@
 		background-color: #FFE2FF;
 
 		&_inner {
-			margin: 10px;
+			padding: 20px 10px;
+			text-align: center;
 		}
 
 		&_title{
-
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 20px;
 		}
 		&_container{
-			.movieContainer_parts{
-				.el_img{
-
-				}
-				.el_desc{
-
-				}
+			.videoList {
+				width: 90%;
+				margin: auto;
 			}
+
+		}
+		.moreBtn {
+			font-size: 16px;
+			border-bottom: 1px solid;
 		}
 	}
 
 	&_studying {
 		margin: 0 10px 20px;
-		background-color: #999999;
-		&_title{
 
+		&_title{
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 20px;
+
+		}
+
+		.imageList {
+			display: flex;
+
+			li {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
 		}
 	}
 
 	&_curriculum {
-		margin: 0 10px 20px;
-		background-color: #999999;
-		&_title{
+		padding: 0 20px 20px;
 
+		&_title{
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 20px;
+
+		}
+
+		&_container {
+			margin-bottom: 20px;
+
+			.curriculum_parts {
+				margin-bottom: 10px;
+			}
+		}
+
+		&_cta {
+			text-align: center;
 		}
 	}
 }
