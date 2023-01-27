@@ -67,9 +67,14 @@
 			z-index: 10;
 
 			.el_catchcopy{
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 5px;
+				width: 80%;
+				text-shadow: 1px 1px #fff;
 			}
 			.el_name{
-
+				font-weight: bold;
 			}
 		}
 		&_shopkeeperImg{
@@ -79,12 +84,18 @@
 			width: 150px;
 			height: 200px;
 			object-fit: cover;
+			border-radius: 10px;
 		}
 	}
 
 	&_profile {
-		margin: 0 10px 20px;
-		background-color: #999999;
+		margin: 0 0 20px;
+		background-color: #F9F3CE;
+
+		&_inner {
+			padding: 10px;
+		}
+
 		&_title{
 
 		}
@@ -95,18 +106,21 @@
 
 	&_desc {
 		margin: 0 10px 20px;
-		background-color: #999999;
 		.el_desc{
-
-		}
+			}
 		.el_img{
-			width: 100%;
+			width: 100px;
+			float: right;
 		}
 	}
 
 	&_movie {
-		margin: 0 10px 20px;
-		background-color: #999999;
+		margin: 0 0 20px;
+		background-color: #FFE2FF;
+
+		&_inner {
+			margin: 10px;
+		}
 
 		&_title{
 
