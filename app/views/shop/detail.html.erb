@@ -24,15 +24,17 @@
 		<%= @shop.description %></p>
 </div>
 
-<div class="shopDetail_movie">
-	<div class="shopDetail_movie_inner">
-		<p class="shopDetail_movie_title"><%= @shop.owner_name %>さんのところに動画で短期留学！</p>
-		<div class="shopDetail_movie_container">
-			<%= render partial: 'video/video_list', locals: { videos: @shop.videos } %>
+<%- if @shop.videos.present? %>
+	<div class="shopDetail_movie">
+		<div class="shopDetail_movie_inner">
+			<p class="shopDetail_movie_title"><%= @shop.owner_name %>さんのところに動画で短期留学！</p>
+			<div class="shopDetail_movie_container">
+				<%= render partial: 'video/video_list', locals: { videos: @shop.videos } %>
+			</div>
+			<%= link_to 'もっとみる', shop_videos_path(params[:shop_id]), class: 'moreBtn' %>
 		</div>
-		<%= link_to 'もっとみる', shop_videos_path(params[:shop_id]), class: 'moreBtn' %>
 	</div>
-</div>
+<%- end %>
 
 <div class="shopDetail_studying">
 	<p class="shopDetail_studying_title"><%= @shop.owner_name %>さんから直接学べる！お店留学！</p>
@@ -73,7 +75,7 @@
 	</div>
 
 	<div class="shopDetail_curriculum_cta">
-		<%= link_to 'お店に留学する', shops_path, class: 'cvBtn' %>
+		<%= link_to 'お店に留学する', 'https://forms.gle/Xer4aaqC7ayVWeys7', class: 'cvBtn' %>
 	</div>
 </div>
 
