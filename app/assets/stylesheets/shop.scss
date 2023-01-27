@@ -1,3 +1,4 @@
+//------------------　一覧画面　-------------------
 .shopIndex {
 	padding: 2%;
 
@@ -20,3 +21,94 @@
 		}
 	}
 }
+
+//------------------　詳細画面　-------------------
+.shopDetail {
+	&_head {
+		min-height: 400px;
+
+		&_shopImgContainer {
+			position: relative;
+			.el_shopImg{
+				width: 100%;
+				aspect-ratio: 4 / 3;
+			}
+		}
+		&_catchcopyContainer{
+			position: absolute;
+			top: 300px;
+			left: 10px;
+			.el_catchcopy{
+
+			}
+			.el_name{
+
+			}
+		}
+		&_shopkeeperImg{
+			position: absolute;
+			top: 150px;
+			right: 10px;
+			width: 150px;
+			height: 200px;
+		}
+	}
+
+	&_profile {
+		margin: 0 10px 20px;
+		background-color: #999999;
+		&_title{
+
+		}
+		&_conatiner{
+
+		}
+	}
+
+	&_desc {
+		margin: 0 10px 20px;
+		background-color: #999999;
+		.el_desc{
+
+		}
+		.el_img{
+			width: 100%;
+		}
+	}
+
+	&_movie {
+		margin: 0 10px 20px;
+		background-color: #999999;
+
+		&_title{
+
+		}
+		&_container{
+			.movieContainer_parts{
+				.el_img{
+
+				}
+				.el_desc{
+
+				}
+			}
+		}
+	}
+
+	&_studying {
+		margin: 0 10px 20px;
+		background-color: #999999;
+		&_title{
+
+		}
+	}
+
+	&_curriculum {
+		margin: 0 10px 20px;
+		background-color: #999999;
+		&_title{
+
+		}
+	}
+}
+

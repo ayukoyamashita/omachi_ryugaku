@@ -1,0 +1,53 @@
+//---------------------header---------------------
+.header{
+	&_inner{
+		background-color: #EAEAEA;
+		width: 100%;
+		height: 300px;
+	}
+}
+
+//---------------------main---------------------
+.main{
+	&_inner{
+		.part_desc{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+		.part_problem{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+		.part_success{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+		.part_flow{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+		.part_plan{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+		.part_options{
+			background-color: #EAEAEA;
+			margin: 10px;
+			height: 100px;
+		}
+	}
+}
+
+//---------------------footer---------------------
+.footer{
+	&_inner{
+		background-color: #EAEAEA;
+		width: 100%;
+		height: 150px;
+	}
+}

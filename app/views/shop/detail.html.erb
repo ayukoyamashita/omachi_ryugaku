@@ -1,1 +1,65 @@
-お店詳細
+<div class="shopDetail_head">
+	<div class="shopDetail_head_shopImgContainer">
+		<img src="<%= asset_path(@shop.image_path) %>" alt="店舗写真" class="el_shopImg">
+	</div>
+	<div class="shopDetail_head_catchcopyContainer">
+		<p class="el_catchcopy"><%= @shop.catch %></p>
+		<p class="el_name"><%= @shop.owner_name %></p>
+	</div>
+	<img src="<%= asset_path(@shop.owner_image_path) %>" alt="店主写真" class="shopDetail_head_shopkeeperImg">
+</div>
+
+<div class="shopDetail_profile">
+	<p class="shopDetail_profile_title"><%= @shop.owner_name %>さんのプロフィール</p>
+	<div class="shopDetail_profile_container">
+		<%= @shop.owner_profile %>
+	</div>
+</div>
+
+<div class="shopDetail_desc">
+	<p class="el_desc"><%= @shop.description %></p>
+	<img src="<%= asset_path(@shop.description_image) %>" alt="店舗紹介写真" class="el_img">
+</div>
+
+<div class="shopDetail_movie">
+	<p class="shopDetail_movie_title"><%= @shop.owner_name %>さんのところに動画で短期留学！</p>
+	<div class="shopDetail_movie_container">
+		<div class="movieContainer_parts">
+			<img src="" alt="" class="el_img">
+			<p class="el_desc">紹介文</p>
+		</div>
+	</div>
+	<%= link_to 'もっとみる', shops_path %>
+</div>
+
+<div class="shopDetail_studying">
+	<p class="shopDetail_studying_title"><%= @shop.owner_name %>さんから直接学べる！お店留学！</p>
+	<img src="" alt="" class="shopDetail_studying_img">
+	<div class="shopDetail_studying_points">
+		<p class="">学べる3つのポイント</p>
+		<ul class="">
+			<li>◯-----------</li>
+			<li>◯-----------</li>
+			<li>◯-----------</li>
+		</ul>
+	</div>
+</div>
+
+<div class="shopDetail_curriculum">
+	<p class="shopDetail_curriculum_title">留学カリキュラム</p>
+	<div class="shopDetail_curriculum_container">
+		<div class="curriculum_parts">
+			<p class="el_date">Day.1</p>
+			<p class="el_desc">------------------</p>
+		</div>
+		<div class="curriculum_parts">
+			<p class="el_date">Day.2</p>
+			<p class="el_desc">------------------</p>
+		</div>
+		<div class="curriculum_parts">
+			<p class="el_date">Day.3</p>
+			<p class="el_desc">------------------</p>
+		</div>
+	</div>
+	<%= link_to 'お店に留学する', shops_path %>
+</div>
