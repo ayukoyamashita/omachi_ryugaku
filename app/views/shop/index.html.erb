@@ -1,13 +1,13 @@
 <div class="shopIndex">
-	<h2>お店を探す</h2>
+	<h2><img src="<%= asset_path('top/shop_search.png') %>" alt="お店でおまち留学"></h2>
 
 	<ul>
 		<%- Shop.all.each do |shop| %>
 			<li>
 				<a href="<%= shop_detail_path(shop.id) %>"><%= image_tag shop.image_path %></a>
 				<h3><%= shop.name %></h3>
-				<p><%= shop.address %></p>
-				<p><%= truncate(shop.description, length: 100) %></p>
+				<p class="address"><%= shop.address %></p>
+				<p><%= truncate(shop.description, length: 50) %></p>
 			</li>
 		<%- end %>
 	</ul>

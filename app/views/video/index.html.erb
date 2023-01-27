@@ -1,6 +1,6 @@
 <div class="videoIndex">
 	<div class="videoIndex_head">
-		<h2>動画一覧</h2>
+		<h2><img src="<%= asset_path('top/movie_search.png') %>" alt="動画でおまち留学"></h2>
 	</div>
 
 	<ul class="videoIndex_list">
@@ -11,7 +11,7 @@
 					<div class="videoIndex_list_thumb"><img src="https://placehold.jp/800x600.png"></div>
 					<div class="videoIndex_list_face"><%= image_tag video.shop.owner_image_path %></div>
 				</a>
-				<p><%= video.point1 %></p>
+				<p><%= video.point1 %> <%= video.point2 %> <%= video.point3 %></p>
 			</li>
 		<%- end %>
 	</ul>
