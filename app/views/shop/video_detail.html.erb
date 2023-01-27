@@ -18,12 +18,14 @@
 	</section>
 
 	<section class="videoDetail_cta">
-		<a href="" class="cvBtn">動画を購入する</a>
+		<a href="https://forms.gle/Xer4aaqC7ayVWeys7" class="cvBtn">動画を購入する</a>
 	</section>
 
-	<section class="videoDetail_other">
-		<h3>〇〇さんの他の動画</h3>
-		<%= render partial: 'video/video_list', locals: {videos: @other_videos} %>
-	</section>
+	<%- if @other_videos.present? %>
+		<section class="videoDetail_other">
+			<h3><%= @shop.name %>の他の動画</h3>
+			<%= render partial: 'video/video_list', locals: { videos: @other_videos } %>
+		</section>
+	<%- end %>
 
 </div>
