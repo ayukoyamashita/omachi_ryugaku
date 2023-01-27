@@ -124,6 +124,14 @@
 							background-attachment: fixed;
 							background-size: cover;
 						}
+
+						#ura{
+							background-image: image-url("shops/milk/main.jpeg");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
 					}
 					.tg2{
 						#omote{
@@ -133,10 +141,24 @@
 							background-attachment: fixed;
 							background-size: cover;
 						}
+						#ura{
+							background-image: image-url("shops/chaka/main.jpeg");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
 					}
 					.tg3{
 						#omote{
 							background-image: image-url("top/success3.png");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
+						#ura{
+							background-image: image-url("shops/charaku/main.jpeg");
 							background-position: center center;
 							background-repeat: no-repeat;
 							background-attachment: fixed;
@@ -156,8 +178,6 @@
 					}
 					#ura{
 						transform:rotateY(0deg);
-						background: white;
-						background-size: 20px 20px;
 					}
 					#tg01:checked~#omote{
 						transform:rotateY(0deg);
@@ -191,7 +211,7 @@
 				display: block;
 				margin: 40px auto;
 				width: 90%;
-				aspect-ratio: 1440.01 / 822.25;
+				aspect-ratio: 1173.47 / 534.19;
 			}
 
 			.el_text{

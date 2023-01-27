@@ -12,6 +12,31 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-size: 13px;
+	position: relative;
+
+	.movie_button{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		top: 564px;
+		left: 10%;
+		@media screen and (max-width: 376px) {
+			display: none;
+		}
+	}
+
+	.shop_button{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		top: 564px;
+		left: 23%;
+		@media screen and (max-width: 376px) {
+			display: none;
+		}
+	}
 }
 
 * {
