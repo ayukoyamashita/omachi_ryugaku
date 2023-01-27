@@ -33,8 +33,8 @@
 
 		&_thumb {
 			width: 100%;
-			aspect-ratio: 973 / 560;
-			margin-bottom: 20px;
+			aspect-ratio: 800 / 600;
+			margin-bottom: 10px;
 
 			img {
 				width: 100%;
@@ -46,7 +46,7 @@
 
 		&_face {
 			position: absolute;
-			top: 140px;
+			top: 200px;
 			right: 10px;
 			width: 100px;
 			height: 100px;
@@ -106,8 +106,9 @@
 	flex-wrap: wrap;
 
 	li {
-		width: 49%;
-		margin: 0 2% 2% 0;
+		width: 48%;
+		margin: 0 4% 4% 0;
+		text-align: left;
 
 		&:nth-child(even) {
 			margin-right: 0;
@@ -117,6 +118,11 @@
 			width: 100%;
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
+			border-radius: 10px;
+		}
+
+		p {
+			line-height: 1.3;
 		}
 	}
 }

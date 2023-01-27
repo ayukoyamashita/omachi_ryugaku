@@ -30,19 +30,23 @@
 		<div class="shopDetail_movie_container">
 			<%= render partial: 'video/video_list', locals: { videos: @shop.videos } %>
 		</div>
-		<%= link_to 'もっとみる', shop_videos_path(params[:shop_id]) %>
+		<%= link_to 'もっとみる', shop_videos_path(params[:shop_id]), class: 'moreBtn' %>
 	</div>
 </div>
 
 <div class="shopDetail_studying">
 	<p class="shopDetail_studying_title"><%= @shop.owner_name %>さんから直接学べる！お店留学！</p>
-	<img src="" alt="" class="shopDetail_studying_img">
+	<ul class="imageList">
+		<li><img src="https://placehold.jp/800x600.png" alt="" class="shopDetail_studying_img"></li>
+		<li><img src="https://placehold.jp/800x600.png" alt="" class="shopDetail_studying_img"></li>
+		<li><img src="https://placehold.jp/800x600.png" alt="" class="shopDetail_studying_img"></li>
+	</ul>
 	<div class="shopDetail_studying_points">
 		<p class="">学べる3つのポイント</p>
 		<ul class="">
-			<li>◯-----------</li>
-			<li>◯-----------</li>
-			<li>◯-----------</li>
+			<li>◯<%= @shop.learn_point1 %></li>
+			<li>◯<%= @shop.learn_point2 %></li>
+			<li>◯<%= @shop.learn_point3 %></li>
 		</ul>
 	</div>
 </div>
@@ -52,16 +56,31 @@
 	<div class="shopDetail_curriculum_container">
 		<div class="curriculum_parts">
 			<p class="el_date">Day.1</p>
-			<p class="el_desc">------------------</p>
+			<p class="el_desc"><%= @shop.learn_day1 %></p>
 		</div>
-		<div class="curriculum_parts">
-			<p class="el_date">Day.2</p>
-			<p class="el_desc">------------------</p>
-		</div>
-		<div class="curriculum_parts">
-			<p class="el_date">Day.3</p>
-			<p class="el_desc">------------------</p>
-		</div>
+		<%- if @shop.learn_day2.present? %>
+			<div class="curriculum_parts">
+				<p class="el_date">Day.2</p>
+				<p class="el_desc"><%= @shop.learn_day2 %></p>
+			</div>
+		<%- end %>
+		<%- if @shop.learn_day3.present? %>
+			<div class="curriculum_parts">
+				<p class="el_date">Day.3</p>
+				<p class="el_desc"><%= @shop.learn_day3 %></p>
+			</div>
+		<%- end %>
 	</div>
-	<%= link_to 'お店に留学する', shops_path %>
+
+	<div class="shopDetail_curriculum_cta">
+		<%= link_to 'お店に留学する', shops_path, class: 'cvBtn' %>
+	</div>
 </div>
+
+<%- content_for :add_js do %>
+	<script>
+		$(function () {
+			$('.imageList').slick();
+		});
+	</script>
+<% end %>
