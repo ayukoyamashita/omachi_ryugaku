@@ -17,7 +17,6 @@
 			.el_img{
 				width: 10%;
 				object-fit: cover;
-				//aspect-ratio: 4 / 3;
 			}
 
 			.el_title{
@@ -33,43 +32,28 @@
 				line-height: 28px;
 			}
 		}
-		.part_problem{
-			.el_img{
-				width: 100%;
-				aspect-ratio: 1440.01 / 822.25;
-			}
-		}
-		.part_success{
-			background-color: #FFE2FF;
-			overflow: hidden;
-			.el_titleImg{
-				display: block;
-				width: 80%;
-				margin: 20px auto;
-				aspect-ratio: 905.91 / 174.47;
-			}
 
+		.part_problem{
+			background-color: #F9F3CE;
+			overflow: hidden;
+			.el_title{
+				font-size: 18px;
+				text-align: center;
+				margin: 30px 0;
+			}
 			&_container{
 				display: flex;
 				justify-content: center;
 				gap: 0 10px;
-				margin: 0 10px 10px;
+				margin: 40px 0;
+
+				.el_img{
+					width: 28%;
+					aspect-ratio: 338.83 / 338.82;
+				}
 			}
 		}
-		.part_flow{
-			.el_img{
-				display: block;
-				margin: 40px auto;
-				width: 80%;
-				aspect-ratio: 1440.01 / 822.25;
-			}
-		}
-		.part_plan{
-			.el_img{
-				width: 100%;
-				aspect-ratio: 1440.01 / 772.1;
-			}
-		}
+
 		.part_options{
 			.el_titleImg{
 				display: block;
@@ -82,15 +66,68 @@
 				display: flex;
 				justify-content: center;
 				gap: 0 50px;
-				margin-bottom: 20px;
+				margin-bottom: 35px;
 
 				.el_img{
-					max-width: 100px;
+					max-width: 130px;
 					aspect-ratio: 413.36 / 413.37;
 				}
 			}
 
 
+		}
+
+		.part_success{
+			background-color: #FFE2FF;
+			overflow: hidden;
+
+			.el_titleImg{
+				display: block;
+				width: 80%;
+				margin: 20px auto;
+				aspect-ratio: 905.91 / 174.47;
+			}
+
+			&_container{
+				display: flex;
+				justify-content: center;
+				gap: 0 10px;
+				margin: 0 10px 10px;
+
+				.success_option{
+					.el_img{
+						width: 10%;
+						position: relative;
+					}
+					.el_number{
+						width: 5%;
+						position: absolute;
+					}
+					.el_name{
+
+					}
+					.el_desc{
+
+					}
+					.el_shopName{
+
+					}
+				}
+			}
+		}
+		.part_flow{
+			.el_img{
+				display: block;
+				margin: 40px auto;
+				width: 90%;
+				aspect-ratio: 1440.01 / 822.25;
+			}
+		}
+		.part_plan{
+			.el_img{
+				width: 100%;
+				aspect-ratio: 1440.01 / 772.1;
+			}
 		}
 	}
 }
