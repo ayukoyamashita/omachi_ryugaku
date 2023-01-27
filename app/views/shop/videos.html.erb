@@ -1,1 +1,18 @@
-お店の動画一覧
+<div class="videoIndex">
+	<div class="videoIndex_head">
+		<h2><%= @shop.name %>の動画一覧</h2>
+	</div>
+
+	<ul class="videoIndex_list">
+		<%- @shop.videos.each do |video| %>
+			<li>
+				<a href="<%= video_detail_path(shop_id: video.shop_id, video_id: video.id) %>">
+					<h3><%= video.name %></h3>
+					<div class="videoIndex_list_thumb"><img src="https://placehold.jp/800x600.png"></div>
+					<div class="videoIndex_list_face"><%= image_tag video.shop.owner_image_path %></div>
+				</a>
+				<p><%= video.point1 %></p>
+			</li>
+		<%- end %>
+	</ul>
+</div>

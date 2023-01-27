@@ -24,12 +24,9 @@
 <div class="shopDetail_movie">
 	<p class="shopDetail_movie_title"><%= @shop.owner_name %>さんのところに動画で短期留学！</p>
 	<div class="shopDetail_movie_container">
-		<div class="movieContainer_parts">
-			<img src="" alt="" class="el_img">
-			<p class="el_desc">紹介文</p>
-		</div>
+		<%= render partial: 'video/video_list', locals: {videos: @shop.videos} %>
 	</div>
-	<%= link_to 'もっとみる', videos_path(shop_id: params[:shop_id]) %>
+	<%= link_to 'もっとみる', shop_videos_path(params[:shop_id]) %>
 </div>
 
 <div class="shopDetail_studying">

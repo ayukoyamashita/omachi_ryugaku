@@ -1,19 +1,19 @@
 <div class="videoDetail">
 	<div class="videoDetail_head">
-		<p>〇〇店〇〇さん</p>
-		<h2>動画タイトル</h2>
+		<p><%= @shop.name %> <%= @shop.owner_name %>さん</p>
+		<h2><%= @video.name %></h2>
 	</div>
 
 	<div class="videoDetail_video">
-
+		<iframe width="560" height="315" src="<%= @video.url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</div>
 
 	<section class="videoDetail_point">
 		<h3>学べる3つのポイント</h3>
 		<ul>
-			<li>ポイント１</li>
-			<li>ポイント２</li>
-			<li>ポイント３</li>
+			<li><%= @video.point1 %></li>
+			<li><%= @video.point2 %></li>
+			<li><%= @video.point3 %></li>
 		</ul>
 	</section>
 
@@ -23,14 +23,7 @@
 
 	<section class="videoDetail_other">
 		<h3>〇〇さんの他の動画</h3>
-		<ul class="videoList">
-			<%- 5.times do %>
-			<li>
-				<img src="https://placehold.jp/150x150.png">
-				<p>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
-			</li>
-				<%- end %>
-		</ul>
+		<%= render partial: 'video/video_list', locals: {videos: @other_videos} %>
 	</section>
 
 </div>
