@@ -10,11 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_27_000328) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_27_020552) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "shops", force: :cascade do |t|
+    t.string "name"
+    t.string "image_path"
+    t.string "catch"
+    t.string "owner_name"
+    t.string "owner_image_path"
+    t.text "owner_profile"
+    t.text "description"
+    t.string "description_image"
+    t.string "address"
+    t.string "learn_image1"
+    t.string "learn_image2"
+    t.string "learn_image3"
+    t.string "learn_point1"
+    t.string "learn_point2"
+    t.string "learn_point3"
+    t.text "learn_day1"
+    t.text "learn_day2"
+    t.text "learn_day3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_27_000328) do
     t.string "point3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "shop_id", comment: "店舗ID"
   end
 
 end
