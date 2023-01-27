@@ -48,22 +48,28 @@
 			<img src="<%= asset_path('top/success_patern.png') %>" alt="おまち留学のあと成功した人たち" class="el_titleImg">
 			<div class="part_success_container">
 				<div class="success_option">
-					<div class="img_container">
-						<img src="<%= asset_path('top/dammy.png') %>" alt="しずおか おまち留学" class="el_img">
+					<div class="card csize tg1">
+						<input id="tg01" style="display: none;" type="checkbox">
+						<label id="omote" class="fuda cardSize" for="tg01"></label>
+						<label id="ura" class="fuda cardSize" for="tg01"></label>
 					</div>
 					<p class="el_name">丸山いづみさん</p>
 					<p class="el_desc">留学先：店舗名</p>
 				</div>
 				<div class="success_option">
-					<div class="img_container">
-						<img src="<%= asset_path('top/dammy.png') %>" alt="しずおか おまち留学" class="el_img">
+					<div class="card csize tg2">
+						<input id="tg02" style="display: none;" type="checkbox">
+						<label id="omote" class="fuda cardSize" for="tg02"></label>
+						<label id="ura" class="fuda cardSize" for="tg02"></label>
 					</div>
 					<p class="el_name">丸山いづみさん</p>
 					<p class="el_desc">留学先：店舗名</p>
 				</div>
 				<div class="success_option">
-					<div class="img_container">
-						<img src="<%= asset_path('top/dammy.png') %>" alt="しずおか おまち留学" class="el_img">
+					<div class="card csize tg3">
+						<input id="tg03" style="display: none;" type="checkbox">
+						<label id="omote" class="fuda cardSize" for="tg03"></label>
+						<label id="ura" class="fuda cardSize" for="tg03"></label>
 					</div>
 					<p class="el_name">丸山いづみさん</p>
 					<p class="el_desc">留学先：店舗名</p>
@@ -111,7 +117,7 @@
 </div>
 
 <%- content_for :add_js do %>
-  <script>
-	  console.log('テスト');
-  </script>
+	<script>
+
+	</script>
 <%- end %>

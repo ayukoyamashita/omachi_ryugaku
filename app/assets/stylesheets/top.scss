@@ -79,6 +79,7 @@
 
 		.part_success{
 			background-color: #FFE2FF;
+			height: 300px;
 			overflow: hidden;
 
 			.el_titleImg{
@@ -91,8 +92,8 @@
 			&_container{
 				display: flex;
 				justify-content: center;
-				gap: 0 10px;
-				margin: 0 10px 10px;
+				gap: 0 25px;
+				margin-bottom: 10px;
 
 				.success_option{
 					.img_container{
@@ -104,16 +105,80 @@
 							left: 10px;
 							content: '';
 						}
+					}
+					.card{
+						position: relative;
+						perspective: 500px;
 
-						.el_img{
-							width: 80px;
+						&Size{
+							width: 100px;
 							height: 120px;
-							display: block;
-							margin: 0 auto;
 						}
 					}
+
+					.tg1{
+						#omote{
+							background-image: image-url("top/success1.png");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
+					}
+					.tg2{
+						#omote{
+							background-image: image-url("top/success2.png");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
+					}
+					.tg3{
+						#omote{
+							background-image: image-url("top/success3.png");
+							background-position: center center;
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: cover;
+						}
+					}
+					.fuda{
+						position:absolute;
+						display:inline-block;
+						transition:2s;
+						backface-visibility:hidden;
+						border-radius:15px;
+					}
+					#omote{
+						transform:rotateY(180deg);
+						padding:0.6em;
+					}
+					#ura{
+						transform:rotateY(0deg);
+						background: white;
+						background-size: 20px 20px;
+					}
+					#tg01:checked~#omote{
+						transform:rotateY(0deg);
+					}
+					#tg01:checked~#ura{
+						transform:rotateY(-180deg);
+					}
+					#tg02:checked~#omote{
+						transform:rotateY(0deg);
+					}
+					#tg02:checked~#ura{
+						transform:rotateY(-180deg);
+					}
+					#tg03:checked~#omote{
+						transform:rotateY(0deg);
+					}
+					#tg03:checked~#ura{
+						transform:rotateY(-180deg);
+					}
 					.el_name{
-						margin: 5px 0;
+						margin: 140px 0 0;
 					}
 					.el_desc{
 

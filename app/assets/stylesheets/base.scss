@@ -6,7 +6,11 @@ body {
 	color: $color-baseText;
 	font-family: 'YuMincho', serif;
 	line-height: 1.5;
-	background-color: #C6DEF3;
+	background-image: image-url("back_img.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	font-size: 13px;
 }
 
@@ -25,4 +29,7 @@ a {
 	margin: 0 20% 0 auto;
 	background-color: #fff;
 	position: relative;
+	@media screen and (min-width: 376px) {
+		padding: 0 7px;
+	}
 }
