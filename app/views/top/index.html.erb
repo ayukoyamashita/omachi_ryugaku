@@ -7,3 +7,18 @@
 
 <h2>お店一覧</h2>
 <%= link_to 'もっとみる', shops_path %>
+
+
+<%- content_for :add_css do %>
+	<style>
+		h1 {
+			color: red;
+		}
+	</style>
+<%- end %>
+
+<%- content_for :add_js do %>
+  <script>
+	  console.log('テスト');
+  </script>
+<%- end %>
