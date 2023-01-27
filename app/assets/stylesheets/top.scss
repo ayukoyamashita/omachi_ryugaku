@@ -95,21 +95,27 @@
 				margin: 0 10px 10px;
 
 				.success_option{
-					.el_img{
-						width: 10%;
+					.img_container{
 						position: relative;
-					}
-					.el_number{
-						width: 5%;
-						position: absolute;
+
+						&::before{
+							position: absolute;
+							top: 10px;
+							left: 10px;
+							content: '';
+						}
+
+						.el_img{
+							width: 80px;
+							height: 120px;
+							display: block;
+							margin: 0 auto;
+						}
 					}
 					.el_name{
-
+						margin: 5px 0;
 					}
 					.el_desc{
-
-					}
-					.el_shopName{
 
 					}
 				}
@@ -122,11 +128,31 @@
 				width: 90%;
 				aspect-ratio: 1440.01 / 822.25;
 			}
+
+			.el_text{
+				text-align: center;
+			}
+
+			.el_button{
+				text-align: center;
+				display: block;
+				width: 160px;
+				margin: 10px auto 20px;
+				padding: 5px 15px;
+				text-decoration: none;
+				color: #273548;
+				border-radius: 20px;
+				border: 1px solid #273548;
+			}
 		}
 		.part_plan{
+			background-color: #CFEAF8;
+			overflow: hidden;
 			.el_img{
-				width: 100%;
-				aspect-ratio: 1440.01 / 772.1;
+				display: block;
+				width: 90%;
+				aspect-ratio: 1171.23 / 274.1;
+				margin: 40px auto;
 			}
 		}
 	}
@@ -135,8 +161,17 @@
 //---------------------footer---------------------
 .footer{
 	&_inner{
-		background-color: #EAEAEA;
-		width: 100%;
-		height: 150px;
+		background-color: #ECECEC;
+		display: flex;
+
+		.el_img{
+			width: 200px;
+			display: block;
+			margin: 20px 25px;
+
+		}
+		.el_container{
+
+		}
 	}
 }
