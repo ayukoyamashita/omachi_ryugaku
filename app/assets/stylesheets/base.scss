@@ -14,9 +14,10 @@ body {
 	font-size: 13px;
 	position: relative;
 
+
 	.movie_button{
 		display: block;
-		position: absolute;
+		position: fixed;
 		width: 150px;
 		height: 150px;
 		top: 564px;
@@ -28,7 +29,7 @@ body {
 
 	.shop_button{
 		display: block;
-		position: absolute;
+		position: fixed;
 		width: 150px;
 		height: 150px;
 		top: 564px;

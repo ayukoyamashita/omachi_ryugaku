@@ -90,7 +90,17 @@
 
 	&_point {
 		margin-bottom: 40px;
+
+		.el_title{
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 10px;
+		}
 		ul {
+			background-color: #CFEAF8;
+			padding: 10px 15px;
+			margin-bottom: 10px;
+			border-radius: 8px;
 			li {
 				&::before {
 					content: '○';
@@ -108,7 +118,9 @@
 		h3 {
 			font-size: 16px;
 			text-align: center;
-			margin-bottom: 20px;
+			margin: 0 20px 30px;
+			border-bottom: 1px solid #868686;
+			padding-bottom: 7px;
 		}
 		.videoList {
 			width: 90%;
