@@ -143,7 +143,7 @@
 	}
 
 	&_studying {
-		margin: 0 10px 20px;
+		margin: 0 10px 40px;
 
 		&_title{
 			text-align: center;
@@ -154,6 +154,7 @@
 
 		.imageList {
 			display: flex;
+			margin-bottom: 20px;
 
 			li {
 				width: 100%;
@@ -161,6 +162,14 @@
 				img {
 					width: 100%;
 				}
+			}
+		}
+
+		&_points {
+			text-align: center;
+			p {
+				font-weight: bold;
+				margin-bottom: 10px;
 			}
 		}
 	}
