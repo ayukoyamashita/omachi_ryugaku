@@ -1,6 +1,6 @@
 Shop.create!(
 	name: "CHA CA（茶花）",
-	image_path: "/shops/chaka/main.jpeg",
+	image_path: "shops/chaka/main.jpeg",
 	catch: "落ち着いた空間でゆったりと。ショッピングの休憩にゆっくりできるデパート内のカフェ",
 	owner_name: 'オーナーの名前',
 	owner_image_path: 'owner_sample.jpg',
@@ -18,3 +18,24 @@ Shop.create!(
 	learn_day2: '二日目の内容です',
 	learn_day3: '三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です',
 )
+
+Shop.create!(
+	name: "すろ～カフェ モミの木",
+	image_path: "shops/momi/main.jpeg",
+	catch: "やさしくて、おいしいスローな暮らしを「食」から提案",
+	owner_name: 'オーナーの名前',
+	owner_image_path: 'owner_sample.jpg',
+	owner_profile: 'オーナーのプロフィール',
+	description: "18年間にわたり親しまれてきた藤枝の人気ケーキ店が2014年にリニューアル。オーガニック素材を使った体にやさしいメニューの提供を通じて、スローな暮らしを提案する。厳選した野菜や国産小麦をふんだんに使った料理は、素材の味がしっかり。また、人気の低糖質＆グルテンフリースコーンも、動物性原料不使用だということを感じさせない味わい。",
+	description_image: "/shops/momi/desc_image.jpeg",
+	address: "426-0071 静岡県藤枝市志太1-6-7",
+	learn_image1: 'dummy.png',
+	learn_image2: 'dummy.png',
+	learn_image3: 'dummy.png',
+	learn_point1: '学ぶポイント１',
+	learn_point2: '学ぶポイント２',
+	learn_point3: '学ぶポイント３',
+	learn_day1: '一日目の内容です一日目の内容です一日目の内容です一日目の内容です一日目の内容です',
+	learn_day2: '二日目の内容です',
+	learn_day3: '三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です三日目の内容です',
+	)
